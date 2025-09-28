@@ -8,35 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
+    /* Core Background & Surfaces */
+    --background: 210 30% 8%;
+    --foreground: 210 40% 98%;
+    
+    --card: 210 25% 12%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 210 25% 12%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Primary Brand Colors - Tech Blue */
+    --primary: 217 91% 60%;
     --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
+    --primary-hover: 217 91% 55%;
+    
+    /* Secondary - Purple Accent */
+    --secondary: 260 70% 65%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-hover: 260 70% 60%;
+    
+    /* Muted Elements */
+    --muted: 210 20% 20%;
+    --muted-foreground: 210 20% 70%;
+    
+    /* Accent - Cyan Highlight */
+    --accent: 180 100% 70%;
+    --accent-foreground: 210 30% 8%;
+    --accent-hover: 180 100% 65%;
+    
+    /* Interactive States */
+    --destructive: 0 85% 60%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    
+    --border: 210 20% 25%;
+    --input: 210 20% 18%;
+    --ring: 217 91% 60%;
+    
+    /* Design System Extensions */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(260 70% 65%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(180 100% 70%) 0%, hsl(217 91% 60%) 100%);
+    --gradient-background: linear-gradient(135deg, hsl(210 30% 8%) 0%, hsl(210 25% 12%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(210 30% 5% / 0.3), 0 2px 4px -1px hsl(210 30% 5% / 0.2);
+    --shadow-lg: 0 10px 15px -3px hsl(210 30% 5% / 0.4), 0 4px 6px -2px hsl(210 30% 5% / 0.3);
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
+    
+    /* Animation Durations */
+    --transition-fast: 150ms ease-out;
+    --transition-normal: 250ms ease-out;
+    --transition-slow: 350ms ease-out;
 
     --sidebar-background: 0 0% 98%;
 
